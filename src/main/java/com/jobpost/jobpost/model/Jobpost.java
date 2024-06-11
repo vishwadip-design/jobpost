@@ -21,10 +21,19 @@ public class Jobpost implements Serializable {
     private int postId;
     private String postProfile;
     private String postDesc;
-    private int reqExperience;
+    private Integer reqExperience;
 
+    private List<String>postTechStack;
 
-       public int getPostId() {
+    public List<String> getPostTechStack() {
+        return postTechStack;
+    }
+
+    public void setPostTechStack(List<String> postTechStack) {
+        this.postTechStack = postTechStack;
+    }
+
+    public int getPostId() {
         return postId;
     }
 
